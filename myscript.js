@@ -383,3 +383,7 @@ function displayHighestAndLowest(data,compareDate) {
 	lowestDiv.innerHTML = "The least valuable currency at " + compareDate + " is: " + data.symbols[lowestSymbol].description;
 	
 }
+
+if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('/sw.js');
+}
