@@ -7,59 +7,76 @@
     <title>Hello World</title>
    
     <!-- include an external style sheet -->
-    <!--<link rel="stylesheet" href="style.css">  -->
+    <link rel="stylesheet" href="style.css">
    
     <!-- include an external JavaScript file -->
     <script src="myscript.js"></script>
 	<link rel="manifest" href="manifest.json">
+	
+	<link rel='icon' href='images/cPWAIcon.ico' type='image/x-icon'/>
 
   </head>
  
   <body>
-	<div id="currency">
-	
-		<input type="date" id="date">
-		<input type="text" id="amount">
-		<select id="currency1"></select>
-		<select id="currency2"></select>
+	<div id="container">
+		<div id="dateDiv">
+			<input type="date" id="date" class="homeElems">
+		</div>
+		<div id="amountDiv">
+			<input type="text" id="amount" class="homeElems">
+		</div>		
+		<div id="currency1Div">
+			<select id="currency1" class="homeElems"></select>
+		</div>
+		<div id="currency2Div">		
+			<select id="currency2" class="homeElems"></select>
+		</div>
+		<div id="getRateDiv">
+			<button id="getRateBtn" class="homeElems">Get Rate</button>
+		</div>
+		<br>
+		<br>
+		<div id="outputDiv">
+			<div id="output" class="homeElems"></div>
+		</div>
+		<br>
+		
 
-		<button id="getRateBtn">Get Rate</button>
-		
+
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+
+		<div id="values">
+			<input type="date" id="date2" class="homeElems"><br>
+			<button id="getHALBtn" class="homeElems">Get Most And Least Valuable Currencies</button>
+			<br>
+			<div id="highest"></div>
+			<div id="lowest"></div>
+		</div>
 		<br>
 		<br>
 		
-		<div id="output"></div>
+		<div id="quiz">
+			<button id="CreateQuizBtn" class="homeElems">Create A Quiz Question</button>
+			<div id="question"></div>
+			
+			<br>
+			
+			<div class="options" id="a"></div>
+			<div class="options" id="b"></div>
+			<div class="options" id="c"></div>
+			<div class="options" id="d"></div>
+			
+			<br>
 		
-		<br>
-		
-		<input type="date" id="date2">
-		<button id="getHALBtn">Get Most And Least Valuable Currencies</button>
-		<br>
-		<div id="highest"></div>
-		<div id="lowest"></div>
+			<div id="checkanswer"></div>
+		</div>
 	</div>
-	
-	<br>
-	<br>
-	
-	<button id="CreateQuizBtn">Create A Quiz Question</button>
-	
-	<br>
-	<br>
-	
-	<div id="question"></div>
-	
-	<br>
-	
-	<div class="options" id="a"></div>
-	<div class="options" id="b"></div>
-	<div class="options" id="c"></div>
-	<div class="options" id="d"></div>
-	
-	<br>
-	
-	<div id="checkanswer"></div>
-	
   </body>
  
 </html>

@@ -1,0 +1,169 @@
+body{
+
+	background-color:white;
+	font-family:Arial, sans-serif;
+	padding:0;
+	background-color:#7D81E7;
+}
+
+*{
+	margin:0;
+	
+}
+
+#container{
+	display:grid;
+	grid-template-areas:
+	"currency1 date currency2"
+	"amount rateBtn output"
+	". . ."
+	". . ."
+	"quiz . values";
+	margin-top:40vh;
+}
+
+#quiz{
+	grid-area:quiz;
+
+	color:#FF9F22;
+}
+
+#CreateQuizBtn{
+	
+}
+
+#container > * {
+	text-align:center;
+}
+
+#dateDiv{
+	grid-area:date;
+	width:30vw;
+	text-align:center;
+}
+
+.homeElems{
+	color:#FF9F22;
+	border:5px solid #ACCEFF;
+	background-color:#BCEAF9;
+	border-radius:5px;
+}
+
+#dateDiv > *, #date2{
+	height:5vh;
+	width:15vw;
+	font-size:13pt;
+}
+
+#date2{
+	height:2.5vh;
+}
+
+#amountDiv{
+	grid-area:amount;
+	width:35vw;
+	text-align:center;
+}
+
+#amountDiv > *, #outputDiv > *{
+	width:25vw;
+	height:5vh;
+	font-size:17pt;
+	
+	
+}
+
+#currency1Div{
+	grid-area:currency1;
+	width:35vw;
+}
+
+#currency2Div{
+	grid-area:currency2;
+	width:35vw;
+}
+
+#currency1, #currency2{
+	width:25vw;
+	height:7vh;
+	border-radius:5%;
+	margin-bottom:3vh;
+}
+
+#outputDiv{
+	grid-area:output;
+	width:35vw;
+	text-align:center;
+}
+
+#output{
+	text-align:center;
+	margin-left:4.5vw;
+	font-size:13pt;
+}
+
+#getRateDiv{
+	grid-area:rateBtn;
+	width:30vw;
+	width:initial;
+	text-align:center;
+}
+
+#values{
+	grid-area:values;
+}
+
+@media(max-width:900px){
+	#container{
+		grid-template-areas:
+		"currency1"
+		"amount"
+		"date"
+		"rateBtn"
+		"currency2"
+		"output"
+		"quiz"
+		"values";
+		margin-top:10vh;
+	}
+	
+	#container > *{
+		width:90vw;
+		margin:5%;
+	}
+	
+	#amountDiv > *, #outputDiv > *{
+		width:80vw;
+		height:5vh;
+		font-size:17pt;
+	}
+	
+	#dateDiv > *{
+		height:5vh;
+		width:60vw;
+		font-size:13pt;
+	}
+	
+	#date2{
+		width:50vw;
+	}
+	
+	#question{
+		color:#FF9F22;
+	}
+	
+	#currency1, #currency2{
+		width:80vw;
+		font-size:17pt;
+	}
+	
+	#getRateBtn{
+		width:60vw;
+		height:5vh;
+		font-size:17pt;
+	}
+	
+	#getRateDiv{
+		text-align:center;
+	}
+}
