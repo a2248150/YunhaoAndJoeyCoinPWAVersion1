@@ -111,6 +111,7 @@ body{
 
 #values{
 	grid-area:values;
+	color:#FF9F22;
 }
 
 @media(max-width:900px){
