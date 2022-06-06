@@ -196,18 +196,18 @@ function quizSymbols(data){
 	question[0].answer = answer;
 	question[0].question = "Match the name to the symbol: " + keys[symbol];
 	
-	while (question[0].answer != a && question[0].a.description == question[0][answer]) {
+	while (question[0].answer != "a" && question[0].a.description == question[0][answer]) {
 		question[0].a = data.symbols[keys[Math.floor(Math.random() * (keys.length - 1))]].description;
 	}
 	
-	while (question[0].answer != b && question[0].b.description == question[0][answer]) {
+	while (question[0].answer != "b" && question[0].b.description == question[0][answer]) {
 		question[0].b = data.symbols[keys[Math.floor(Math.random() * (keys.length - 1))]].description;
 	}
-	while (question[0].answer != c && question[0].c.description == question[0][answer]) {
+	while (question[0].answer != "c" && question[0].c.description == question[0][answer]) {
 		question[0].c = data.symbols[keys[Math.floor(Math.random() * (keys.length - 1))]].description;
 	}
 	
-	while (question[0].answer != d && question[0].d.description == question[0][answer]) {
+	while (question[0].answer != "d" && question[0].d.description == question[0][answer]) {
 		question[0].d = data.symbols[keys[Math.floor(Math.random() * (keys.length - 1))]].description;
 	}
 	
